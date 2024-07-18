@@ -85,7 +85,8 @@ public class ModUpdater
     [HarmonyPatch(typeof(MainMenuManager), nameof(MainMenuManager.Start)), HarmonyPostfix, HarmonyPriority(Priority.LowerThanNormal)]
     public static void StartPostfix()
     {
-
+        isChecked = true;
+        return;
         CustomPopup.Init();
 
         if (!isChecked && firstStart) CheckForUpdate();

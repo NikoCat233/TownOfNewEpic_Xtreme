@@ -335,8 +335,7 @@ public class Main : BasePlugin
         //   AddComponent<UIBase>();
         //   UI = AddComponent<CreateUIElements>();
 
-
-        SystemEnvironment.SetEnvironmentVariables();
+        // SystemEnvironment.SetEnvironmentVariables();
 
         Harmony.PatchAll();
 
